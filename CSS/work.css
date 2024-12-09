@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #9e1b32;
+    color: white;
+    line-height: 1.6;
+}
+
+.navbar {
+    background-color: #020202;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    color: #ffcc00;
+}
+
+.work-section {
+    margin-top: 80px;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.work-section h2 {
+    font-size: 32px;
+    color: white;
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.work {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    padding: 20px;
+    width: 90%;
+    max-width: 900px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.work:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.work-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.work-left img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: box-shadow 0.3s ease;
+}
+
+.work-left img:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+}
+
+.work-right {
+    flex: 2;
+    padding-left: 20px;
+}
+
+.work-right h3 {
+    font-size: 24px;
+    color: #ffcc00;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.work-right p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .work {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .work-left {
+        margin-bottom: 20px;
+    }
+
+    .work-left img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .work-right {
+        padding-left: 0;
+    }
+}
