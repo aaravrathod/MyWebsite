@@ -5,7 +5,6 @@ body {
   background-color: #9e1b32; 
   color: white; 
   font-size: 2rem;
-  padding-top: 80px; /* Ensures content isn't hidden under fixed navbar */
 }
 
 .navbar {
@@ -34,16 +33,14 @@ body {
   text-decoration: none;
   color: white;
   font-size: 18px;
-  transition: color 0.3s ease;
 }
 
 .navbar ul li a:hover {
   text-decoration: underline;
-  color: #ffcc00; /* Light yellow on hover */
 }
 
 .section {
-  margin-top: 80px; /* Ensures content starts below navbar */
+  margin-top: 80px; 
   padding: 20px;
   text-align: center;
 }
@@ -58,7 +55,7 @@ body {
 
 .contact-row {
   display: flex;
-  flex-direction: column; /* Stack contact items vertically */
+  flex-direction: column; 
   justify-content: flex-start; 
   margin-bottom: 20px;
 }
@@ -80,47 +77,21 @@ body {
 .info-item a {
   color: white;
   text-decoration: none;
-  transition: color 0.3s ease;
 }
 
 .info-item a:hover {
   text-decoration: underline;
-  color: #ffcc00; /* Light yellow on hover */
 }
 
-/* Media Query for Phones (max-width 600px) */
 @media (max-width: 600px) {
-  body {
-    font-size: 1.2rem; /* Adjust font size for smaller screens */
-    padding-top: 60px; /* Slightly reduce padding for better layout */
-  }
-
-  .navbar ul li {
-    margin: 0 10px; /* Reduce navbar item margin for small screens */
-  }
-
-  .contact-info {
-    padding: 20px; /* Less padding for mobile */
-    width: 100%; /* Ensure it takes full width */
-    max-width: none; /* Remove max-width for better responsiveness */
-  }
-
   .info-item {
-    font-size: 18px; /* Adjust text size for mobile */
-    margin-bottom: 15px; /* Increase spacing between items */
+      font-size: 18px;
   }
-
   .contact-icon {
-    font-size: 25px; /* Make icons a bit smaller */
-    margin-right: 10px; 
+      font-size: 25px; 
   }
 
   .contact-row {
-    flex-direction: column; /* Stack items vertically */
-    padding: 0 10px; /* Add some padding for spacing */
-  }
-
-  .info-item a {
-    font-size: 16px; /* Smaller link font size for mobile */
+      flex-direction: column;
   }
 }
